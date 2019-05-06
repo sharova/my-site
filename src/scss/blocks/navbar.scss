@@ -1,0 +1,20 @@
+
+.nav-item {
+  font-size: $font-xs;
+  font-weight: 700;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-sm;
+  }
+}
+
+.navbar-light #navbarNavDropdown .navbar-nav .nav-link {
+  color: $main-color-light;
+  
+  @media (min-width: $screen-lg) {
+    
+    &:hover {
+      color: $second-color;;
+    }
+  }
+}

@@ -1,33 +1,46 @@
 .banner {
-  min-height: 500px;
-  background-color: $gray-light;
-  padding-top: 100px;
-  padding-left: 30px;
+  min-height: 400px;
+  // background-color: $gray-light;
+  background: rgb(229,238,245);
+  background: linear-gradient(169deg, rgba(229,238,245,1) 0%, rgba(229,238,245,0.9923319669664741) 56%, rgba(205,213,224,1) 56%, rgba(205,213,224,1) 100%);
+  padding-top: 10px;
   position: relative;
 
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 700px;
-    height: 417px;
-    right: 100px;
-    top: 50px;
-    background-image: url('../img/pictures/CV.png');
+  @media (min-width: $screen-md) {
+    padding-top: 50px;
   }
 
   &__title {
     text-transform: uppercase;
-    font-size: $font-xxl;
-    font-weight: 700;
+    font-size: $font-lg;
     color: $second-color;
+
+    @media (min-width: $screen-md) {
+      font-size: $font-xl;
+      margin-top: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-xxl;
+      margin-left: 50px;
+      margin-top: 40px;
+    }
   }
 
   &__slogan {
     text-transform: uppercase;
-    font-size: $font-sm;
+    font-size: $font-xxs;
     font-weight: 700;
     display: block;
     color: $main-color;
+    
+    @media (min-width: $screen-md) {
+      font-size: $font-sm;
+      padding-left: 4px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 50px;
+    }
   }
 }

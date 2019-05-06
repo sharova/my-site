@@ -1,4 +1,33 @@
 .general {
   min-height: 500px;
-  background-color: $bg-color-light;
+  background-color: $gray-darker;
+  
+  &__title {
+    font-size: $font-md;
+    padding-top: 40px;
+    margin-bottom: 70px;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-lg;
+      margin-left: 50px;
+    }
+  }
+
+  &__text {
+    font-size: $font-xxs;
+    color: $main-color;
+    font-weight: 500;
+
+    @media (min-width: $screen-md) {
+      font-size: $font-xs;
+    }
+    
+    @media (min-width: $screen-lg) {
+    }
+  }
+
+  svg {
+    display: block;
+    margin: 30px auto;
+  }
 }

@@ -9,20 +9,37 @@ $gray-darker:         #CDD5E0;
 
 $text-color:          $main-color;
 
-$font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+$font-family:         -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue, Helvetica, Roboto, sans-serif;
 $font-size:           14px;
 $line-height:         1.4;
 
 $screen-sm:           320px;
 $screen-md:           768px;
-$screen-lg:           1440px;
+$screen-lg:           1200px;
 
 $font-xxs: 12px;
 $font-xs: 14px;
 $font-sm: 16px;
-$font-md: 18px;
-$font-lg: 22px;
-$font-xl: 30px;
+$font-md: 20px;
+$font-lg: 30px;
+$font-xl: 40px;
 $font-xxl: 55px;
 
+   // <!--  <svg width="20" height="21">
+   //        <use xlink:href="img/sprite.svg#icon_cart"></use>
+   //      </svg> -->
 
+ // &:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   width: 700px;
+  //   height: 417px;
+  //   right: 100px;
+  //   top: 50px;
+  //   background-image: url('../img/pictures/CV.png');
+  // }
+@media (min-width: $screen-md) {
+}
+@media (min-width: $screen-lg) {
+}

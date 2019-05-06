@@ -17,103 +17,230 @@
 
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E5EEF5;">
     <div class="container">
-      <a href="#" class="navbar-brand"><img src="img/azura_logo.png" alt="logo" class="logo__img" width="50" height="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse align-items-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a href="#" class="nav-link">Основное</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Суперсилы</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Цели</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Опыт</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">F.A.Q.</a></li>
-          <li class="nav-item"><a href="#" class="nav-link btn btn-primary">Контакты</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item"><a href="#general" class="nav-link">Основное</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Суперсилы</a></li>
+          <li class="nav-item"><a href="#jobs" class="nav-link">Опыт</a></li>
+          <li class="nav-item"><a href="#goals" class="nav-link">Цели</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">F.A.Q.</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
         </ul>
       </div>
     </div>
   </nav> 
 
+  <!---Баннер -->
+
   <div class="banner">
     <div class="container">
-      <h1 class="banner__title">Верстальщик</h1>
-      <span class="banner__slogan">в Вашу дружную компанию</span>
-    </div>
-  </div>
-  
-  <div class="general">
-    <div class="container">
       <div class="row">
-        <h2 class="general__title">Основная информация</h2>
+        <div class="col-md-6"><h1 class="banner__title">Верстальщик</h1>
+          <span class="banner__slogan">в Вашу дружную компанию</span>
+        </div>
+        <div class="col-md-6">
+          <img src="img/pictures/CV.png" class ="banner__img"  height="300" width="500" alt="resume">
+        </div>
       </div>
     </div>
   </div>
+  
+  <!-- Основная информация -->
+
+  <div class="general" id="general">
+    <div class="container">
+      <h2 class="general__title">Основная информация</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <svg width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-girl"></use>
+          </svg>
+          <div class="general__text text-center">
+            <p>Возраст: <span class="font-weight-bold">29 лет</span></p>
+            <p>Город: <span class="font-weight-bold">Санкт-Петербург</span></p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <svg width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-graduate"></use>
+          </svg> 
+          <div class="general__text text-center">
+            <p>Образование: <span class="font-weight-bold">высшее</span></p>
+            <p>Специальность: <span class="font-weight-bold">связи с общественностью</span></p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <svg width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-work"></use>
+          </svg>
+          <div class="general__text text-center">
+            <p>Работа в маркетинге и рекламе: <span class="font-weight-bold">с 2012 г.</span></p>
+            <p>Работа с версткой: <span class="font-weight-bold">с 2015 г.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Навыки -->
+
+  <div class="skills" id="skills">
+    <div class="container">
+      <h2 class="skills__title">Знания и навыки:</h2>
+      <div class="row">
+        <div class="col-md-4 skills__item"><p>HTML, CSS (БЭМ, SASS)</p></div>
+        <div class="col-md-4 skills__item"><p>Основы JS</p></div>
+        <div class="col-md-4 skills__item"><p>Gulp, NPM</p></div>
+        <div class="col-md-4 skills__item"><p>Git, github (работа с ветками)</p></div>
+        <div class="col-md-4 skills__item"><p>Flex, Grid, Bootstrap</p></div>
+        <div class="col-md-4 skills__item"><p>Photoshop, Illustrator (svg, ai, jpg, png, gif)</p></div>
+        <div class="col-md-4 skills__item"><p>Работа с cms Wordpress, Joomla, Bitrix. </p></div>
+        <div class="col-md-4 skills__item"><p>Языки: английский, китайский, испанский</p></div>
+        <div class="col-md-4 skills__item"><p>Написание статей, копирайтинг </p></div>
+      </div>
+    </div>
+  </div>
+  <!-- Опыт работы -->
+
+  <div class="jobs" id="jobs">
+    <div class="container">
+      <h2 class="jobs__title">Опыт работы</h2>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">2010-2012</p>
+              <p>журналист-фрилансер, газеты «Комендантский аэродром» и «Коммунальная газета»; </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">2012-2014</p>
+              <p>интернет-маркетолог ООО «ГРУЗОМОБИЛЬ-ПИТЕР» </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">2014-2015</p>
+              <p class="card-text">ведущий специалист, помощник руководителя пресс-службы ОАО «Мостострой №6»</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">август 2016 - январь 2017, август-сентябрь 2018</p>
+              <p class="card-text">администрирование сайта на bitrix (lenenergo.ru), верстка новых страниц</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">июль 2016 - ноябрь 2016</p>
+              <p class="card-text">маркетолог НКО «Союз управленцев Северо-запада»</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">2016 - 2018</p>
+              <p class="card-text">маркетолог, администратор «Школа Динары Мин»</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card jobs-card my-3 ">
+            <img src="img/pictures/jobs-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text font-weight-bold">2019</p>
+              <p class="card-text">прошла курс продвинутой верстки, работа на фрилансе</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Цели -->
+
+  <!-- Портфолио -->
 
   <!-- F.A.Q. -->
 
   <div class="faq">
     <div class="container">
-      <h2 class="faq-title text-center">Ответы на частые вопросы</h2>
+      <h2 class="faq-title">Ответы на частые вопросы</h2>
       <div class="row">
         
         <div class="accordion w-100" id="accordionFaq">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  1. Желаемая зарплата?
-                </button>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1. Желаемая зарплата?</button>
               </h5>
             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Сделать заказ Вы можете, позвонив по телефону или отправив сообщение. Контактную информацию Вы можете увидеть в разделе «контакты».</p>
-                <p>Чтобы сделать заказ клиенту необходимо понимание того, что именно он хочет получить. Желательно заранее озадачиться наличием рисунка или текста, который хочется нанести на изделие, и знать желаемые размеры вышивки.</p>
+                <p>Так как в новой специальности считаю себя молодым специалистом, готова рассмотреть предложения от 45 т.р. с возможностью дальнейшего роста при повышении квалификации.</p>
+                <p></p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  2. Когда могу приступить к работе?
-                </button>
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. Когда могу приступить к работе?</button>
               </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Сроки изготовления вышивки зависят от количества единиц вышивки и времени, затраченного на изготовление 1 единицы вышивки, а также точности и полноты задачи, поставленной клиентом.</p>
-                <p>! При получении задания на изготовление вышивки, клиенту будет обозначено примерное время изготовления заказа.</p>
-                <p>!! При внесении изменений в проект или увеличении/уменьшении количества единиц вышивки, время на ее изготовлении может меняться.</p>
+                <p>Сразу же после прохождения собеседования и обсуждения условий труда.</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  3. Го?
-                </button>
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. Моё образование</button>
               </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Стоимость изготовления вышивки складывается из нескольких аспектов:</p>
                 <ul>
-                  <li>Написание проекта</li>
-                  <li>Размер вышивки</li>
-                  <li>Времени изготовления 1 единицы вышивки</li>
-                  <li>Количество единиц вышивки</li>
-                  <li>Тип ниток, которыми будет выполняться вышивка</li>
-                </ul>
-                <p>! Стоимость изготовления вышивки золотыми (серебряными, бронзовыми) или флуоресцентными нитями стоит дороже, из-за более дорогой стоимости самих нитей.
-                • Срочность изготовления.</p>
-                <p>!! Если Вам необходимо получить готовую вышивку «вчера» или «сегодня утром», мы вынуждены откладывать заранее запланированные на это время работы, из-за чего стоимость вышивки может быть увеличена в 2 раза.</p>
+                  <li>1997-2007   Школа №43 с углублённым изучением иностранных языков, золотая медаль; </li>
+                  <li>2007-2012   ГФ СПбГЭТУ «ЛЭТИ», ГФ, факультет «Связи с общественностью», красный диплом; </li>
+                  <li>2013   Прохождение курса ораторского искусства ORATORIS;</li>
+                  <li>2015   Курсы базовой верстки "Epic skills";</li>
+                  <li>2016-2018   Курсы китайского языка "Школа Динары Мин";</li>
+                  <li>2019   Курсы продвинутой верстки "Epic skills";</li>
 
-                <p>!!! При получении задания (рисунка) на изготовление вышивки, клиенту будет названа примерная стоимость изготовления 1 единицы вышивки. Точная стоимость изготовления 1 единицы будет известна после написания проекта.</p>
+                </ul>
 
               </div>
             </div>
@@ -121,31 +248,36 @@
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  4. Сколько стоит написание проекта?
-                </button>
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">4. Какими иностранными языками владею</button>
               </h5>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Проект пишется в специальной программе по заранее присланному рисунку или тексту. Стоимость проекта зависит от его сложности и времени, затраченного на его написание, от 100 рублей (за написание фамилии и имени) или от 300 рублей (за написание небольшого контурного рисунка) и до «бесконечности», в зависимости от сложности рисунка и фантазии заказчика</p>
+                <p>С 1997-2007 изучала испанский язык. В 2007 сдан экзамен D.E.L.E. на знание испанского языка (Nivel Intermedio)</p>
 
-                <p>! Любые дизайнерские игры типа, «мы можем здесь дорисовать», «можно здесь сделать не такой изгиб, а другой» или «давайте поиграем различными шрифтам» и т.д. оплачиваются отдельно, в зависимости от количества и сложности внесенных в проект изменений.</p>
+                <p>С 1998 изучаю английский язык. В университете был пройден курс деловой переписки и перевода официальных документов. Могу свободно изьясняться, читаю в оригинале, пользуюсь англоязычными учебниками.</p>
+
+                <p>С 2016 изучаю китайский язык. В 2017 г. сданы экзамены HSKK1 и HSK2, пройдена языковая стажировка в университете Нанкина (3 недели, Nanjing Normal University 南京师范大学). В 2018 пройдена языковая стажировка в университете Шанхая (2 недели, Shanghai International Studies University 上海外国语大学). В 2018 сдан экзамен HSK4.</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingFive">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  5. Размер вышивки. 
-                </button>
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">5. Хобби и увлечения</button>
               </h5>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Максимальный размер вышивки 20х30 см. Если наносить вышивку на готовое изделие (куртка, футболка или брюки), следует понимать, что пяльцы большого размера не всегда могут поместиться в изделии, поэтому размер вышивки может быть уменьшен.</p>
-                <p>При вышивке на кепках максимальный размер 13x5 см на готовом изделии.</p>
+                <ul>
+                  <li>Танцы, занятия в тренажёрном зале;</li>
+                  <li>Занимаюсь вокалом;</li>
+                  <li>Графика - традиционная и digital;</li>
+                  <li>Путешествия;</li>
+                  <li>Иностранные языки;</li>
+                  <li>Азиатская кухня;</li>
+                </ul>
+
               </div>
             </div>
           </div>
@@ -153,23 +285,19 @@
             <div class="card-header" id="headingSix">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  6. На каких изделиях можно делать вышивку?
+                  6. Личные качества
                 </button>
               </h5>
             </div>
             <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFaq">
               <div class="card-body">
-                <p>Делать компьютерную вышивку можно практически на любой ткани. Вышивка может изготавливаться, как на крое, так и на готовом изделии.</p>
-                <p>Вы можете сделать заказ на изготовление вышивки на:</p>
                 <ul>
-                  <li>Рабочей и повседневной одежде</li>
-                  <li>Спортивной одежде</li>
-                  <li>Свадебных и вечерних платьях</li>
-                  <li>Костюмам для шоу и танцев</li>
-                  <li>Головных уборах</li>
-                  <li>Полотенцах и халатах</li>
-                  <li>Скатертях, салфетках и других предметах домашнего интерьера</li>
-                  <li>Сувенирной продукций и т.д.</li>
+                  <li>коммуникабельная,</li>
+                  <li>ответственная,</li>
+                  <li>сторонник постоянного саморазвития,</li>
+                  <li>требовательная к себе,</li>
+                  <li>креативная,</li>
+                  <li>позитивная;</li>
                 </ul>
               </div>
             </div>
@@ -183,7 +311,7 @@
 
   <div class="contacts">
     <div class="container">
-      <h2 class="contacts-title text-center">Наши контакты</h2>
+      <h2 class="contacts-title text-center">Контакты</h2>
       <div class="row">
         
       </div>
